@@ -68,7 +68,7 @@ async def on_message(message):
         await message.channel.send(MENU)
         return
 
-    # Handle a numbered selection
+    # Handle a selection
     if content.startswith("!select"):
         parts = content.split()
         if len(parts) != 2 or not parts[1].isdigit():
@@ -84,7 +84,7 @@ async def on_message(message):
         await handler.run(message)
         return
 
-    # Unknown command fallback
+    # error handling
     if content.startswith("!"):
         await message.channel.send("❌ Unknown command. Type `!menu` for options.")
 
