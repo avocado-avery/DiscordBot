@@ -1,4 +1,37 @@
-# DiscordBot
-Python Discord bot for my CompSci-1 class
+DiscordBot
 
-To create your own, create your .env file with your discord bot token
+This is a simple Python Discord bot created for my Computer Science 1 class project.
+
+It demonstrates basic Python programming concepts, including:
+
+    Loops (for, while)
+
+    Conditionals (if-else, if-elif-else)
+
+    continue and break
+
+    Lists, 2D lists, and dictionaries
+
+    Functions
+
+    Basic string manipulation
+
+The bot allows users to interact by selecting questions from a menu or running specific commands like grading or age categorization.DiscordBot
+
+This is a simple Python Discord bot created for my Computer Science 1 class project.
+
+It demonstrates basic Python programming concepts, including:
+
+    Loops (for, while)
+
+    Conditionals (if-else, if-elif-else)
+
+    continue and break
+
+    Lists, 2D lists, and dictionaries
+
+    Functions
+
+    Basic string manipulation
+
+The bot allows users to interact by selecting questions from a menu or running specific commands like grading or age categorization.

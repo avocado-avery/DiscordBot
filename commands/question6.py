@@ -1,27 +1,24 @@
-#!/usr/bin/env python3
-
-# commands/question4.py
+# File: commands/question6.py
 
 async def run(message):
     text = "abracadabra"
-    result = []
+    processed_letters = ""
+    found_d = False
 
-    for ch in text:
-        if ch == 'a':
-            continue
-        if ch == 'd':
-            result.append("🚫 Found 'd', stopping.")
-            break
-        result.append(ch)
+    for letter in text:
+        if letter == 'a':
+            continue   
+        if letter == 'd':
+            found_d = True
+            break      
+        processed_letters += letter  
 
-    # Separate result letters from stop message if needed
-    letters = [ch for ch in result if len(ch) == 1]
-    status = next((ch for ch in result if len(ch) > 1), "")
+    response = "**Question 6 Result:**\n"
+    response += "Processed letters: `" + processed_letters + "`\n"
 
-    response = "**Q3.2 Result:**\n"
-    response += "Processed letters: `" + "".join(letters) + "`\n"
-    if status:
-        response += status
+    if found_d:
+        response += "🚫 Found 'd', stopping."
 
     await message.channel.send(response)
+
 

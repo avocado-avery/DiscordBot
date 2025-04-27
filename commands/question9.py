@@ -1,19 +1,16 @@
-#!/usr/bin/env python3
-
-# commands/question7.py
+# File: commands/question9.py
 
 async def run(message):
     inventory = { 'apple': 5, 'banana': 2, 'orange': 0 }
-
-    lines = []
+    text = "Question 9: Inventory Status\n"
 
     for item in inventory:
         qty = inventory[item]
         if qty > 0:
-            lines.append(f"{item}: in stock ✅")
+            text = text + item + ": in stock ✅\n"
         else:
-            lines.append(f"{item}: out of stock ❌")
+            text = text + item + ": out of stock ❌\n"
 
-    result = "**Q4.3: Inventory Status**\n" + "\n".join(lines)
-    await message.channel.send(result)
+    await message.channel.send(text)
+
 

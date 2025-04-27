@@ -1,4 +1,4 @@
-#!/usr/bin/env python3
+# File: commands/question3.py
 
 async def run(message):
     content = message.content.strip()
@@ -21,4 +21,5 @@ async def run(message):
     else:
         grade = "F"
 
-    await message.channel.send(f"You got a **{grade}**!")
+    await message.channel.send("You got a " + grade + "!")
+

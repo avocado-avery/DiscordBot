@@ -1,13 +1,11 @@
-#!/usr/bin/env python3
-
-# commands/question2_2.py
+# File: commands/question4.py
 
 async def run(message):
     content = message.content.strip()
     parts = content.split()
 
     if len(parts) != 2 or not parts[1].isdigit():
-        await message.channel.send("❌ Usage: `!age <your age>` (e.g. `!age 25`)")
+        await message.channel.send("❌ Usage: !age <your age> (example: !age 25)")
         return
 
     age = int(parts[1])
@@ -21,5 +19,6 @@ async def run(message):
     else:
         category = "Senior"
 
-    await message.channel.send(category)
+    await message.channel.send("You are a " + category + ".")
+
 

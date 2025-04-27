@@ -26,11 +26,11 @@ MENU = (
     "8️⃣  Question 8\n"
     "9️⃣  Question 9\n"
     "\nType `!select <number>` (e.g. `!select 3`) to run that question."
-    "\nType `!grade <number>` (e.g. `!grade 85`) to run that question."
-    "\nType `!age <number>` (e.g. `!age 18`) to run that question."
+    "\nType `!grade <number>` (e.g. `!grade 85`) to calculate your letter grade."
+    "\nType `!age <number>` (e.g. `!age 18`) to categorize your age group."
 )
 
-# Map numbers to modules
+# map numbers to questions
 HANDLERS = {
     1: question1,
     2: question2,
@@ -72,7 +72,7 @@ async def on_message(message):
     if content.startswith("!select"):
         parts = content.split()
         if len(parts) != 2 or not parts[1].isdigit():
-            await message.channel.send("❌ Usage: `!select <1–9>`.")
+            await message.channel.send("❌ Usage: !select <number> (example: !select 3)")
             return
 
         choice = int(parts[1])

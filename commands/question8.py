@@ -1,22 +1,23 @@
-#!/usr/bin/env python3
-
-# commands/question6.py
+# File: commands/question8.py
 
 async def run(message):
     scores = [
-        [85, 92, 78, 90],   # Student 1
-        [88, 79, 85, 87],   # Student 2
-        [90, 91, 89, 93]    # Student 3
+        [85, 92, 78, 90],   
+        [88, 79, 85, 87],   
+        [90, 91, 89, 93],    
     ]
 
-    lines = []
-    for i in range(len(scores)):
-        total = 0
-        for score in scores[i]:
-            total += score
-        average = total / len(scores[i])
-        lines.append(f"Student {i + 1} average: {average:.2f}")
+    text = "Question 8: Student Averages\n"
 
-    result = "**Q4.2: Student Averages**\n" + "\n".join(lines)
-    await message.channel.send(result)
+    student_number = 1
+    for student_scores in scores:
+        total = 0
+        for score in student_scores:
+            total = total + score
+        average = total / len(student_scores)
+        text = text + "Student " + str(student_number) + " average: " + str(round(average, 2)) + "\n"
+        student_number = student_number + 1
+
+    await message.channel.send(text)
+
 
