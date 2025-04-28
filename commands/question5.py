@@ -6,10 +6,10 @@ async def run(message):
 
     for num in numbers:
         if num == 0:
-            continue  # Skip zeros
+            continue
         if num < 0:
             text = text + "\n⚠️ Negative encountered: " + str(num)
-            break  # Stop on first negative
+            break  
         text = text + str(num) + ", "
 
     await message.channel.send(text)
