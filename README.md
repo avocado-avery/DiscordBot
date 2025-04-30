@@ -79,7 +79,7 @@ You are a Adult.
 
 Make sure you do not commit your .env file.
 If you're sharing this on GitHub, add .env to your .gitignore.
-✅ Ready to Run
+
 
 Once set up, the bot connects to Discord and responds to your commands from any server where it's invited.
 
