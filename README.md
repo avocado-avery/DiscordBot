@@ -25,17 +25,19 @@ DISCORD_TOKEN=your-bot-token-here
 
 
 ### 3. Install dependencies
-
+```bash
 pip install -r requirements.txt
+```
 
 Or, if you don’t have a requirements.txt, install manually:
-
+```bash
 pip install discord.py python-dotenv
+```
 
 ### 4. Run the bot
-
+```bash
 python3 bot.py
-
+```
 💬 Bot Commands
 !menu
 
