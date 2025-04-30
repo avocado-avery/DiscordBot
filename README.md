@@ -12,8 +12,7 @@ The bot is designed to run basic Python programs through Discord, demonstrating 
 ### 1. Clone the project or download the files
 
 ```bash
-git clone https://github.com/your-username/DiscordBot.git
-cd DiscordBot
+git clone https://github.com/avocado-avery/DiscordBot.git ~/DiscordBot && cd DiscordBot
 
 2. Create a .env file in the root directory
 
