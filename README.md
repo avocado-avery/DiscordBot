@@ -13,7 +13,7 @@ The bot is designed to run basic Python programs through Discord, demonstrating 
 
 ```bash
 git clone https://github.com/avocado-avery/DiscordBot.git ~/DiscordBot && cd DiscordBot
-
+```
 2. Create a .env file in the root directory
 
 Inside the file, add your Discord bot token:
