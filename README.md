@@ -83,9 +83,4 @@ If you're sharing this on GitHub, add .env to your .gitignore.
 
 Once set up, the bot connects to Discord and responds to your commands from any server where it's invited.
 
-> !menu
-> !select 2
-> !grade 85
-> !age 12
-
 
