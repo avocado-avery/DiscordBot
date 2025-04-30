@@ -14,7 +14,8 @@ The bot is designed to run basic Python programs through Discord, demonstrating 
 ```bash
 git clone https://github.com/avocado-avery/DiscordBot.git ~/DiscordBot && cd DiscordBot
 ```
-2. Create a .env file in the root directory
+
+### 2. Create a .env file in the root directory
 
 Inside the file, add your Discord bot token:
 
@@ -22,7 +23,8 @@ DISCORD_TOKEN=your-bot-token-here
 
     ⚠️ Do not commit your .env file. It contains your private token.
 
-3. Install dependencies
+
+### 3. Install dependencies
 
 pip install -r requirements.txt
 
@@ -30,7 +32,7 @@ Or, if you don’t have a requirements.txt, install manually:
 
 pip install discord.py python-dotenv
 
-4. Run the bot
+### 4. Run the bot
 
 python3 bot.py
 
@@ -83,5 +85,5 @@ Once set up, the bot connects to Discord and responds to your commands from any 
 > !select 2
 > !grade 85
 > !age 12
-```
+
 
